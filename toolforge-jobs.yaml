@@ -38,6 +38,14 @@
   filelog-stdout: logs/archive-ar.out
   filelog-stderr: logs/archive-ar.err
 
+- name: archive-botreq
+  image: tf-python39
+  command: bot/pyvenv/bin/python3 bot/archive-botreq/edit.py
+  schedule: "32 19 * * *"
+  emails: onfailure
+  filelog-stdout: logs/archive-botreq.out
+  filelog-stderr: logs/archive-botreq.err
+
 - name: bad-image-list-cleaner
   image: tf-python39
   command: bot/pyvenv/bin/python3 bot/bad-image-list-cleaner/main.py
