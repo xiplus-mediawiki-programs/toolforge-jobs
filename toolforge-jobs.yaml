@@ -358,6 +358,14 @@
   filelog-stdout: logs/spam-whitelist-archive.out
   filelog-stderr: logs/spam-whitelist-archive.err
 
+- name: titleblacklist-expiry
+  image: tf-python39
+  command: bot/pyvenv/bin/python3 bot/titleblacklist-expiry/edit.py
+  schedule: "20 19 * * 0"
+  emails: onfailure
+  filelog-stdout: logs/titleblacklist-expiry.out
+  filelog-stderr: logs/titleblacklist-expiry.err
+
 - name: transclusion-count
   image: tf-python39
   command: bot/pyvenv/bin/python3 bot/transclusion-count/edit.py
