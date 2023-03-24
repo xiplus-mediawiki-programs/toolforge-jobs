@@ -30,6 +30,14 @@
   filelog-stdout: logs/afd-section-title.out
   filelog-stderr: logs/afd-section-title.err
 
+- name: archive-ar
+  image: tf-python39
+  command: bot/pyvenv/bin/python3 bot/archive-ar/edit.py
+  schedule: "48 19 * * *"
+  emails: onfailure
+  filelog-stdout: logs/archive-ar.out
+  filelog-stderr: logs/archive-ar.err
+
 - name: bad-image-list-cleaner
   image: tf-python39
   command: bot/pyvenv/bin/python3 bot/bad-image-list-cleaner/main.py
