@@ -377,7 +377,7 @@
 - name: titleblacklist-expiry
   image: tf-python39
   command: bot/pyvenv/bin/python3 bot/titleblacklist-expiry/edit.py
-  schedule: "20 19 * * 0"
+  schedule: "20 19 * * *"
   emails: onfailure
   filelog-stdout: logs/titleblacklist-expiry.out
   filelog-stderr: logs/titleblacklist-expiry.err
