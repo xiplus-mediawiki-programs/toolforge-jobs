@@ -1,7 +1,7 @@
 - name: abusefilter-list
   image: tf-php74
   command: php bot/Abusefilter-list/edit.php
-  schedule: "51 23 * * 0"
+  schedule: "51 22 * * 5"
   emails: onfailure
   filelog-stdout: logs/abusefilter-list.out
   filelog-stderr: logs/abusefilter-list.err
