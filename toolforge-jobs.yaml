@@ -22,13 +22,13 @@
   filelog-stdout: logs/adminstats.out
   filelog-stderr: logs/adminstats.err
 
-# - name: afd-section-title
-#   image: tf-python39
-#   command: bot/pyvenv/bin/python3 bot/afd-section-title/edit.py
-#   schedule: "6 */3 * * *"
-#   emails: onfailure
-#   filelog-stdout: logs/afd-section-title.out
-#   filelog-stderr: logs/afd-section-title.err
+- name: afd-section-title
+  image: tf-python39
+  command: bot/pyvenv/bin/python3 bot/afd-section-title/edit.py
+  schedule: "6 */3 * * *"
+  emails: onfailure
+  filelog-stdout: logs/afd-section-title.out
+  filelog-stderr: logs/afd-section-title.err
 
 - name: archive-ar
   image: tf-python39
