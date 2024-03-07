@@ -134,6 +134,14 @@
   filelog-stdout: logs/fix-non-free-files-backlink.out
   filelog-stderr: logs/fix-non-free-files-backlink.err
 
+- name: logrotate
+  image: mariadb
+  command: /usr/sbin/logrotate -s $TOOL_DATA_DIR/logrotate-status $TOOL_DATA_DIR/logrotate.conf
+  schedule: "13 5 * * *"
+  emails: onfailure
+  filelog-stdout: logrotate.out
+  filelog-stderr: logrotate.err
+
 - name: mark-dykc
   image: tf-python39
   command: bot/pyvenv/bin/python3 bot/mark-DYKC/edit.py
