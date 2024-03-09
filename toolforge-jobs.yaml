@@ -425,7 +425,7 @@
 - name: unconnected-pages-report-zhwp
   image: tf-python39
   command: bot/pyvenv/bin/python3 bot/unconnected-pages-report/edit.py zh wikipedia
-  schedule: "22 20 * * 0"
+  schedule: "22 20 * * *"
   emails: onfailure
   filelog-stdout: logs/unconnected-pages-report-zhwp.out
   filelog-stderr: logs/unconnected-pages-report-zhwp.err
