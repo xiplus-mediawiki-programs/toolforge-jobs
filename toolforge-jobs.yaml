@@ -166,13 +166,13 @@
   filelog-stdout: logs/mark-rrd.out
   filelog-stderr: logs/mark-rrd.err
 
-- name: move-renamed-users-flow
-  image: tf-python39
-  command: bot/pyvenv/bin/python3 bot/move-renamed-users-flow/move.py
-  schedule: "35 20 * * *"
-  emails: onfailure
-  filelog-stdout: logs/move-renamed-users-flow.out
-  filelog-stderr: logs/move-renamed-users-flow.err
+# - name: move-renamed-users-flow
+#   image: tf-python39
+#   command: bot/pyvenv/bin/python3 bot/move-renamed-users-flow/move.py
+#   schedule: "35 20 * * *"
+#   emails: onfailure
+#   filelog-stdout: logs/move-renamed-users-flow.out
+#   filelog-stderr: logs/move-renamed-users-flow.err
 
 - name: newusermessage-signatures
   image: tf-php74
