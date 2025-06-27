@@ -222,30 +222,6 @@
   filelog-stdout: logs/o1-deleter.out
   filelog-stderr: logs/o1-deleter.err
 
-- name: policy-newsletter-last-1
-  image: tf-python39
-  command: bot/pyvenv/bin/python3 bot/policy-newsletter/policy-newsletter.py --months -1
-  schedule: "0 * 1-7 * *"
-  emails: onfailure
-  filelog-stdout: logs/policy-newsletter-last-1.out
-  filelog-stderr: logs/policy-newsletter-last-1.err
-
-- name: policy-newsletter-last-2
-  image: tf-python39
-  command: bot/pyvenv/bin/python3 bot/policy-newsletter/policy-newsletter.py --months -1
-  schedule: "0 */6 8-31 * *"
-  emails: onfailure
-  filelog-stdout: logs/policy-newsletter-last-2.out
-  filelog-stderr: logs/policy-newsletter-last-2.err
-
-- name: policy-newsletter-this
-  image: tf-python39
-  command: bot/pyvenv/bin/python3 bot/policy-newsletter/policy-newsletter.py --months 0
-  schedule: "0 0 */5 * *"
-  emails: onfailure
-  filelog-stdout: logs/policy-newsletter-this.out
-  filelog-stderr: logs/policy-newsletter-this.err
-
 - name: pps-indef
   image: tf-python39
   command: bot/pyvenv/bin/python3 bot/protected-pages-status/indef.py
