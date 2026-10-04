@@ -335,8 +335,8 @@
   filelog-stderr: logs/remove-inuse.err
 
 - name: revoke-archive
-  image: tf-php74
-  command: php bot/revoke-archive/edit.php
+  image: tf-python39
+  command: bot/pyvenv/bin/python3 bot/revoke-archive/edit.py
   schedule: "31 20 * * *"
   emails: onfailure
   filelog-stdout: logs/revoke-archive.out
