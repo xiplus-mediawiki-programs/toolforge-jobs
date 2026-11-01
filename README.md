@@ -11,3 +11,8 @@ Load jobs
 ```
 toolforge-jobs load toolforge-jobs.yaml
 ```
+
+Run single job
+```
+toolforge-jobs run o1-deleter-once --command "bot/pyvenv/bin/python3 bot/o1-deleter/main.py" --image python3.13 --wait
+```
