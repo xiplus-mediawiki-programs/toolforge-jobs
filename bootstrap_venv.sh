@@ -23,6 +23,5 @@ pip install python-dateutil
 pip install requests
 pip install SQLAlchemy
 
-pip install --upgrade "setuptools>=49.4.0, !=50.0.0, <50.2.0"
 cd $HOME/pywikibot
 pip install -e .
