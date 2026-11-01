@@ -1,5 +1,5 @@
 - name: abusefilter-list
-  image: tf-php74
+  image: php8.4
   command: php bot/Abusefilter-list/edit.php
   schedule: "51 22 * * 5"
   emails: onfailure
@@ -87,7 +87,7 @@
   filelog-stderr: logs/cv-report.err
 
 - name: drv-tag-talk
-  image: tf-php74
+  image: php8.4
   command: php bot/DRV-tag-talk/edit.php
   schedule: "5 20 * * *"
   emails: onfailure
@@ -127,7 +127,7 @@
   filelog-stderr: logs/fix-broken-double-redirect.err
 
 - name: fix-non-free-files-backlink
-  image: tf-php74
+  image: php8.4
   command: php bot/fix-non-free-files-backlink/edit.php
   schedule: "4 20 * * *"
   emails: onfailure
@@ -175,7 +175,7 @@
 #   filelog-stderr: logs/move-renamed-users-flow.err
 
 - name: newusermessage-signatures
-  image: tf-php74
+  image: php8.4
   command: php bot/Newusermessage-signatures/edit.php
   schedule: "14 20 * * 0"
   emails: onfailure
@@ -239,7 +239,7 @@
   filelog-stderr: logs/pps-longtime.err
 
 - name: proposed-mergers-archive
-  image: tf-php74
+  image: php8.4
   command: php bot/proposed-mergers-archive/edit.php
   schedule: "20 20 * * *"
   emails: onfailure
@@ -319,7 +319,7 @@
   filelog-stderr: logs/remove-broken-file-template.err
 
 - name: remove-draft-copyvio
-  image: tf-php74
+  image: php8.4
   command: php bot/remove-draft-copyvio/edit.php
   schedule: "2 20 * * *"
   emails: onfailure
@@ -327,7 +327,7 @@
   filelog-stderr: logs/remove-draft-copyvio.err
 
 - name: remove-inuse
-  image: tf-php74
+  image: php8.4
   command: php bot/remove-inuse/edit.php
   schedule: "3 * * * *"
   emails: onfailure
@@ -375,7 +375,7 @@
   filelog-stderr: logs/transclusion-count.err
 
 - name: uaa-archive
-  image: tf-php74
+  image: php8.4
   command: php bot/UAA-archive/edit.php
   schedule: "*/10 * * * *"
   emails: onfailure
@@ -415,7 +415,7 @@
   filelog-stderr: logs/user-right-process.err
 
 - name: usertalk-archive
-  image: tf-php74
+  image: php8.4
   command: php bot/usertalk-archive/edit.php
   schedule: "21 20 * * *"
   emails: onfailure
