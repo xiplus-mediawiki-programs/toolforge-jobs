@@ -1,6 +1,6 @@
 #!/bin/bash
 # ref: https://wikitech.wikimedia.org/wiki/Help:Toolforge/Python#Kubernetes_python_jobs
-# run: toolforge-jobs run bootstrap-venv --command "cd $PWD && ./bootstrap_venv.sh" --image tf-python39 --wait
+# run: toolforge-jobs run bootstrap-venv --command "cd $PWD && ./bootstrap_venv.sh" --image python3.13 --wait
 
 # use bash strict mode
 set -euo pipefail

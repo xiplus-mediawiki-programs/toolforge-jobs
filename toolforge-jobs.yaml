@@ -7,7 +7,7 @@
   filelog-stderr: logs/abusefilter-list.err
 
 - name: admin-activity-report
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/admin-activity-report/edit.py
   schedule: "34 19 * * 0"
   emails: onfailure
@@ -15,7 +15,7 @@
   filelog-stderr: logs/admin-activity-report.err
 
 - name: adminstats
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/adminstats-2/edit.py
   schedule: "0 0 1 * *"
   emails: onfailure
@@ -23,7 +23,7 @@
   filelog-stderr: logs/adminstats.err
 
 - name: afd-section-title
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/afd-section-title/edit.py
   schedule: "6 */3 * * *"
   emails: onfailure
@@ -31,7 +31,7 @@
   filelog-stderr: logs/afd-section-title.err
 
 - name: archive-ar
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/archive-ar/edit.py
   schedule: "48 19 * * *"
   emails: onfailure
@@ -39,7 +39,7 @@
   filelog-stderr: logs/archive-ar.err
 
 - name: archive-botreq
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/archive-botreq/edit.py
   schedule: "32 19 * * *"
   emails: onfailure
@@ -47,7 +47,7 @@
   filelog-stderr: logs/archive-botreq.err
 
 - name: bad-image-list-cleaner
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/bad-image-list-cleaner/main.py
   schedule: "32 20 * * *"
   emails: onfailure
@@ -55,7 +55,7 @@
   filelog-stderr: logs/bad-image-list-cleaner.err
 
 - name: bot-list
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/bot-list/edit.py
   schedule: "30 20 * * *"
   emails: onfailure
@@ -63,7 +63,7 @@
   filelog-stderr: logs/bot-list.err
 
 - name: check-sign
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/check-sign/edit.py
   schedule: "23 20 * * *"
   emails: onfailure
@@ -71,7 +71,7 @@
   filelog-stderr: logs/check-sign.err
 
 - name: cv-remove-deleted
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/cv-remove-deleted/edit.py
   schedule: "9 */3 * * *"
   emails: onfailure
@@ -79,7 +79,7 @@
   filelog-stderr: logs/cv-remove-deleted.err
 
 - name: cv-report
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/cv-report/edit.py
   schedule: "*/10 * * * *"
   emails: onfailure
@@ -95,7 +95,7 @@
   filelog-stderr: logs/drv-tag-talk.err
 
 - name: ep-status
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/ep-status/edit.py
   schedule: "12 * * * *"
   emails: onfailure
@@ -103,7 +103,7 @@
   filelog-stderr: logs/ep-status.err
 
 - name: ewip-archive
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/ewip-archive/edit.py
   schedule: "8 20 * * *"
   emails: onfailure
@@ -111,7 +111,7 @@
   filelog-stderr: logs/ewip-archive.err
 
 - name: expand-templates-in-title
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/expand-templates-in-title/edit.py
   schedule: "26 * * * *"
   emails: onfailure
@@ -119,7 +119,7 @@
   filelog-stderr: logs/expand-templates-in-title.err
 
 - name: fix-broken-double-redirect
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/fix-broken-double-redirect/edit.py
   schedule: "46 * * * *"
   emails: onfailure
@@ -143,7 +143,7 @@
   filelog-stderr: logrotate.err
 
 - name: mark-dykc
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/mark-DYKC/edit.py
   schedule: "13 20 * * *"
   emails: onfailure
@@ -151,7 +151,7 @@
   filelog-stderr: logs/mark-dykc.err
 
 - name: mark-itntalk
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/mark-itntalk/edit.py
   schedule: "22 */4 * * *"
   emails: onfailure
@@ -159,7 +159,7 @@
   filelog-stderr: logs/mark-itntalk.err
 
 - name: mark-rrd
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/mark-RRD/edit.py
   schedule: "*/30 * * * *"
   emails: onfailure
@@ -167,7 +167,7 @@
   filelog-stderr: logs/mark-rrd.err
 
 # - name: move-renamed-users-flow
-#   image: tf-python39
+#   image: python3.13
 #   command: bot/pyvenv/bin/python3 bot/move-renamed-users-flow/move.py
 #   schedule: "35 20 * * *"
 #   emails: onfailure
@@ -183,7 +183,7 @@
   filelog-stderr: logs/newusermessage-signatures.err
 
 - name: newusermessage-signatures-archive
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/newusermessage-signatures-archive/edit.py
   schedule: "10 20 * * *"
   emails: onfailure
@@ -191,7 +191,7 @@
   filelog-stderr: logs/newusermessage-signatures-archive.err
 
 - name: not-report-afd-pages
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/not-report-afd-pages/edit.py
   schedule: "17 20 * * 0"
   emails: onfailure
@@ -199,7 +199,7 @@
   filelog-stderr: logs/not-report-afd-pages.err
 
 - name: not-report-np-pages
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/not-report-np-pages/edit.py
   schedule: "6 20 * * 0"
   emails: onfailure
@@ -207,7 +207,7 @@
   filelog-stderr: logs/not-report-np-pages.err
 
 - name: np-maintenance
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/np-maintenance/edit.py
   schedule: "14 */6 * * *"
   emails: onfailure
@@ -215,7 +215,7 @@
   filelog-stderr: logs/np-maintenance.err
 
 - name: o1-deleter
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/o1-deleter/main.py
   schedule: "*/10 * * * *"
   emails: onfailure
@@ -223,7 +223,7 @@
   filelog-stderr: logs/o1-deleter.err
 
 - name: pps-indef
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/protected-pages-status/indef.py
   schedule: "16 20 * * 0"
   emails: onfailure
@@ -231,7 +231,7 @@
   filelog-stderr: logs/pps-indef.err
 
 - name: pps-longtime
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/protected-pages-status/longtime.py
   schedule: "15 20 * * 0"
   emails: onfailure
@@ -247,7 +247,7 @@
   filelog-stderr: logs/proposed-mergers-archive.err
 
 - name: protect-hrt-zhwikt
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/protect-hrt/protect.py zh wiktionary zhwiktionary
   schedule: "11 20 * * *"
   emails: onfailure
@@ -255,7 +255,7 @@
   filelog-stderr: logs/protect-hrt-zhwikt.err
 
 - name: protect-hrt-zhvoy
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/protect-hrt/protect.py zh wikivoyage zhwikivoyage
   schedule: "25 20 * * *"
   emails: onfailure
@@ -263,7 +263,7 @@
   filelog-stderr: logs/protect-hrt-zhvoy.err
 
 - name: protect-hrt-zhwp
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/protect-hrt/protect.py zh wikipedia zhwiki
   schedule: "49 20 * * *"
   emails: onfailure
@@ -271,7 +271,7 @@
   filelog-stderr: logs/protect-hrt-zhwp.err
 
 - name: protect-locked-userpage
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/protect-locked-userpage/protect.py
   schedule: "24 * * * *"
   emails: onfailure
@@ -279,7 +279,7 @@
   filelog-stderr: logs/protect-locked-userpage.err
 
 - name: protect-templates-in-mediawiki-ns
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/protect-templates-in-mediawiki-ns/protect.py
   schedule: "25 20 * * *"
   emails: onfailure
@@ -287,7 +287,7 @@
   filelog-stderr: logs/protect-templates-in-mediawiki-ns.err
 
 - name: purge-at
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/purge-at/purge.py
   schedule: "19 * * * *"
   emails: onfailure
@@ -295,7 +295,7 @@
   filelog-stderr: logs/purge-at.err
 
 - name: remove-broken-file-edit
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/remove-broken-file/edit.py --limit 12
   schedule: "*/30 * * * *"
   emails: onfailure
@@ -303,7 +303,7 @@
   filelog-stderr: logs/remove-broken-file-edit.err
 
 - name: remove-broken-file-output
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/remove-broken-file/output_files.py
   schedule: "18 20 * * 0"
   emails: onfailure
@@ -311,7 +311,7 @@
   filelog-stderr: logs/remove-broken-file-output.err
 
 - name: remove-broken-file-template
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/remove-broken-file/remove-template.py
   schedule: "1 * * * *"
   emails: onfailure
@@ -335,7 +335,7 @@
   filelog-stderr: logs/remove-inuse.err
 
 - name: revoke-archive
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/revoke-archive/edit.py
   schedule: "31 20 * * *"
   emails: onfailure
@@ -343,7 +343,7 @@
   filelog-stderr: logs/revoke-archive.err
 
 - name: spam-blacklist-archive
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/spam-blacklist-archive/edit.py
   schedule: "18 20 * * *"
   emails: onfailure
@@ -351,7 +351,7 @@
   filelog-stderr: logs/spam-blacklist-archive.err
 
 - name: spam-whitelist-archive
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/spam-whitelist-archive/edit.py
   schedule: "21 20 * * *"
   emails: onfailure
@@ -359,7 +359,7 @@
   filelog-stderr: logs/spam-whitelist-archive.err
 
 - name: titleblacklist-expiry
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/titleblacklist-expiry/edit.py
   schedule: "20 * * * *"
   emails: onfailure
@@ -367,7 +367,7 @@
   filelog-stderr: logs/titleblacklist-expiry.err
 
 - name: transclusion-count
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/transclusion-count/edit.py
   schedule: "44 19 * * 0"
   emails: onfailure
@@ -383,7 +383,7 @@
   filelog-stderr: logs/uaa-archive.err
 
 - name: unconnected-pages-report-szywp
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/unconnected-pages-report/edit.py szy wikipedia
   schedule: "32 20 * * 0"
   emails: onfailure
@@ -391,7 +391,7 @@
   filelog-stderr: logs/unconnected-pages-report-szywp.err
 
 - name: unconnected-pages-report-zhwikt
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/unconnected-pages-report/edit.py zh wiktionary
   schedule: "22 20 * * 0"
   emails: onfailure
@@ -399,7 +399,7 @@
   filelog-stderr: logs/unconnected-pages-report-zhwikt.err
 
 - name: unconnected-pages-report-zhwp
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/unconnected-pages-report/edit.py zh wikipedia
   schedule: "22 20 * * *"
   emails: onfailure
@@ -407,7 +407,7 @@
   filelog-stderr: logs/unconnected-pages-report-zhwp.err
 
 - name: user-right-process
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/user-right-process/edit.py
   schedule: "33 20 * * *"
   emails: onfailure
@@ -423,7 +423,7 @@
   filelog-stderr: logs/usertalk-archive.err
 
 - name: zhwikt-afd-archive
-  image: tf-python39
+  image: python3.13
   command: bot/pyvenv/bin/python3 bot/zhwikt-afd-archive/edit.py
   schedule: "48 20 * * *"
   emails: onfailure
