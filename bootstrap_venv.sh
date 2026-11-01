@@ -5,7 +5,8 @@
 # use bash strict mode
 set -euo pipefail
 
-# create the venv
+# create the venv in bot/, where jobs expect bot/pyvenv
+cd "$(dirname "$0")/.."
 rm -rf pyvenv
 python3 -m venv pyvenv
 
